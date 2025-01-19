@@ -18,16 +18,17 @@ const ProductCategory = () => {
         {categories.map((category) => (
           <div 
             key={category.id}
-            className="group border border-gray-800 p-2 bg-white rounded-md shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer overflow-hidden"
+            className="group border border-gray-500 p-2 bg-white rounded-md shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer overflow-hidden"
             onClick={() => handleCategoryClick(category.slug)}
           >
             <div className="relative overflow-hidden flex justify-center">
               <img 
                 src={category.image}
                 alt={category.name}
+                loading='lazy'
                 className="md:w-full max-w-fit md:h-[17.5rem] h-[19rem] object-fit rounded-md transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div className="absolute flex justify-center inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="p-4 text-white text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <Plus className="mx-auto mb-2" size={24} />
                   <p className="text-sm">View Collection</p>

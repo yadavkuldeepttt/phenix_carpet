@@ -16,7 +16,7 @@ const Header = () => {
     },
     { name: 'LUXOR COLLECTION', href: '#' },
     { name: 'HOSPITALITY COLLECTION', href: '#' },
-    { name: 'CONTACT US', href: '#' },
+    { name: 'CONTACT US', href: '/contact' },
   ];
 
     // Handle scroll behavior

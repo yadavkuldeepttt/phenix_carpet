@@ -7,6 +7,7 @@ import Footer from "./components/footer.jsx";
 import WhatsAppFloat from "./components/whatsappFloat.jsx"
 import Contact from "./pages/contact.jsx";
 import AboutPage from "./pages/about.jsx";
+import ContactPage from "./pages/contact.jsx";
 
 class App extends Component {
   render() {
@@ -16,7 +17,8 @@ class App extends Component {
         <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutPage/>} />
+            <Route path="/about" element={<AboutPage/>} />            
+            <Route path="/contact" element={<ContactPage/>} />
             
           </Routes>
         </div>

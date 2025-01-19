@@ -1,189 +1,186 @@
-import { ChevronRight, Phone, Mail, MapPin, Clock, Send, ArrowRight } from 'lucide-react'
-import React from 'react'
+import React from "react";
+import { Phone, Mail, MapPin, Clock, Send, MessageSquare } from "lucide-react";
+import PageBanner from "./pageBanner";
 
-function Contact() {
-  const handleClick = () => {
-    window.open(`https://wa.me/${phoneNumber}`, '_blank');
+const ContactPage = () => {
+  const contactInfo = [
+    {
+      icon: <Phone className="w-6 h-6" />,
+      title: "Call Us",
+      details: ["+91 123 456 7890", "+91 098 765 4321"],
+      description: "Available Mon-Sat, 9:00 AM to 6:00 PM",
+      gradient: "from-blue-400 to-purple-500",
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: "Email Us",
+      details: ["info@phenixcarpets.com", "support@phenixcarpets.com"],
+      description: "We'll respond within 24 hours",
+      gradient: "from-purple-400 to-pink-500",
+    },
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: "Visit Us",
+      details: [
+        "123 Carpet Lane, Craft District",
+        "Bhadohi, Uttar Pradesh 221401",
+      ],
+      description: "Experience our craftsmanship in person",
+      gradient: "from-pink-400 to-red-500",
+    },
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: "Business Hours",
+      details: ["Monday - Saturday: 9:00 AM - 6:00 PM", "Sunday: Closed"],
+      description: "Indian Standard Time (IST)",
+      gradient: "from-red-400 to-orange-500",
+    },
+  ];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission
   };
 
   return (
-    <div className="bg-gradient-to-b from-yellow-50 to-white min-h-screen">
-      {/* Hero Section with Breadcrumb */}
-      <nav
-        className="relative bg-cover bg-center bg-no-repeat text-sm text-gray-600 py-32"
-        aria-label="Breadcrumb"
-        style={{
-          backgroundImage: "url('/images/about/about_banner.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl tracking-[0.05rem] font-bold text-white mb-3">Get in Touch</h1>
-            <p className="text-yellow-300 text-xs md:text-xl">We'd love to hear from you</p>
-          </div>
-          <ol className="flex justify-center items-center space-x-1 md:space-x-3">
-            <li className="inline-flex items-center">
-              <a href="/" className="text-gray-200 hover:text-yellow-300 transition duration-300">
-                Home
-              </a>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <ChevronRight className="w-4 h-4 mx-2 text-gray-200" />
-                <span className="text-yellow-300 font-semibold">Contact Us</span>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </nav>
+    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen">
+      <PageBanner
+        title="Contact Us"
+        subtitle="Get in Touch with Our Experts"
+        backgroundImage="url('https://thephenixcarpets.com/wp-content/uploads/2023/05/0005.jpg')"
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
+      />
 
-      {/* Contact Info Cards */}
-      <div className="max-w-7xl mx-auto px-4 -mt-16 mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { icon: Phone, title: "Call Us", content: "+1 (555) 123-4567", subContent: "Mon-Fri 9AM to 6PM" },
-            { icon: Mail, title: "Email Us", content: "info@yourcompany.com", subContent: "We'll respond within 24 hours" },
-            { icon: MapPin, title: "Visit Us", content: "123 Business Street", subContent: "New York, NY 10001" }
-          ].map((item, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition duration-300">
-              <div className="flex flex-col items-center text-center">
-                <div className="bg-yellow-50 p-4 rounded-full mb-4">
-                  <item.icon className="w-8 h-8 text-yellow-500" />
+      <div className="container mx-auto px-4 max-w-7xl py-16 md:py-24">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 right-0 -z-10 opacity-10">
+          <div className="w-96 h-96 bg-gradient-to-r from-blue-300 to-purple-300 rounded-full blur-3xl"></div>
+        </div>
+        <div className="absolute bottom-0 left-0 -z-10 opacity-10">
+          <div className="w-96 h-96 bg-gradient-to-r from-pink-300 to-orange-300 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Enhanced Contact Form */}
+          <div className="relative bg-white p-8 rounded-2xl shadow-xl overflow-hidden">
+            {/* Decorative gradient background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
+
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-8">
+                <MessageSquare className="w-8 h-8 text-blue-600" />
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Send Us a Message
+                </h2>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="group">
+                    <label className="block text-start text-sm font-medium text-gray-700 mb-1 transition-colors group-focus-within:text-blue-600">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white bg-opacity-80 backdrop-blur-sm"
+                      required
+                    />
+                  </div>
+                  <div className="group">
+                    <label className="block text-start text-sm font-medium text-gray-700 mb-1 transition-colors group-focus-within:text-blue-600">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full  px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white bg-opacity-80 backdrop-blur-sm"
+                      required
+                    />
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.title}</h3>
-                <p className="text-gray-600 font-medium mb-1">{item.content}</p>
-                <p className="text-sm text-gray-500">{item.subContent}</p>
+                <div className="group">
+                  <label className="block text-start text-sm font-medium text-gray-700 mb-1 transition-colors group-focus-within:text-blue-600">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full  px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white bg-opacity-80 backdrop-blur-sm"
+                    required
+                  />
+                </div>
+                <div className="group">
+                  <label className="block text-sm text-start font-medium text-gray-700 mb-1 transition-colors group-focus-within:text-blue-600">
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white bg-opacity-80 backdrop-blur-sm"
+                    required
+                  />
+                </div>
+                <div className="group">
+                  <label className="block text-start text-sm font-medium text-gray-700 mb-1 transition-colors group-focus-within:text-blue-600">
+                    Message
+                  </label>
+                  <textarea
+                    rows={4}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white bg-opacity-80 backdrop-blur-sm resize-none"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
+                >
+                  <Send className="w-5 h-5" />
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          {/* Enhanced Company Image and Map */}
+            <div className="group rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl">
+              <div className="relative">
+                <img
+                  src="https://thephenixcarpets.com/wp-content/uploads/2023/04/007.jpg"
+                  loading="lazy"
+                  alt="Phenix Carpets Showroom"
+                  className="w-full h-screen object-cover transform transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+        </div>
+         {/* Contact Information Cards */}
+         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+          {contactInfo.map((info, index) => (
+            <div
+              key={index}
+              className="group relative bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-1"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-5 transition-opacity duration-500 ${info.gradient}"></div>
+              <div className="flex flex-col items-center text-center relative z-10">
+                <div
+                  className={`mb-4 p-3 rounded-full bg-gradient-to-r ${info.gradient} text-white transform group-hover:scale-110 transition-transform duration-500`}
+                >
+                  {info.icon}
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-gray-800">
+                  {info.title}
+                </h3>
+                {info.details.map((detail, idx) => (
+                  <p key={idx} className="text-gray-600 mb-1">
+                    {detail}
+                  </p>
+                ))}
+                <p className="text-sm text-gray-500 mt-2">{info.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-
-      {/* Main Content Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
-            <div className="mb-8">
-              <h2 className="text-3xl font-bold text-gray-800 mb-2">Send us a Message</h2>
-              <p className="text-gray-600">Fill out the form below and we'll get back to you shortly.</p>
-            </div>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm text-start text-gray-700 font-medium mb-1" htmlFor="firstName">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-200"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-gray-700 text-start font-medium mb-1" htmlFor="lastName">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-200"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm text-gray-700 text-start font-medium mb-1" htmlFor="email">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-200"
-                  placeholder="john@example.com"
-                />
-              </div>
-              <div>
-                <label className="block text-sm text-gray-700 text-start font-medium mb-1" htmlFor="subject">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-200"
-                  placeholder="How can we help?"
-                />
-              </div>
-              <div>
-                <label className="block text-sm text-gray-700 text-start font-medium mb-1" htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition duration-200"
-                  placeholder="Your message..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-4 px-6 rounded-lg transition duration-300 flex items-center justify-center space-x-2 group"
-              >
-                <span>Send Message</span>
-                <Send className="w-5 h-5 transform group-hover:translate-x-1 transition duration-300" />
-              </button>
-            </form>
-          </div>
-
-          {/* Map and Business Hours */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986790365237!3d40.69714941680757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1701234567890!5m2!1sen!2s"
-                className="w-full h-[400px]"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Business Hours</h3>
-              <div className="space-y-4">
-                {[
-                  { day: "Monday - Friday", hours: "9:00 AM - 6:00 PM" },
-                  { day: "Saturday", hours: "10:00 AM - 4:00 PM" },
-                  { day: "Sunday", hours: "Closed" }
-                ].map((schedule, index) => (
-                  <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600 font-medium">{schedule.day}</span>
-                    <span className="text-gray-800">{schedule.hours}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-yellow-50 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Need Immediate Assistance?</h3>
-              <p className="text-gray-600 mb-6">Our support team is available 24/7 to help you with any questions.</p>
-              <a
-                href="#"
-                onClick={handleClick}
-                className="inline-flex items-center space-x-2 text-yellow-600 hover:text-yellow-700 font-medium"
-              >
-                <Phone className="w-5 h-5" />
-                <span>Call Now</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default ContactPage;

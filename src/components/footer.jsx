@@ -98,7 +98,7 @@ const Footer = () => {
               Copyright © {new Date().getFullYear()} The Phenix Carpet, All Rights Reserved.
             </p>
             <p className="text-xs text-slate-500 leading-relaxed max-w-4xl mx-auto">
-              The Phenix Carpet, India's Largest Manufacturer of Rugs/Carpets, Woolen Carpet Manufacturers, Hand Knotted Rugs Carpet Manufacturer and Exporter in India, Indoor Carpet Manufacturers, Carpet Manufacturers in India, Outdoor Carpet Manufacturers, Carpet Manufacturer India, India's Largest Manufacturer of Hand Knotted Rugs, Silk Carpet Manufacturers and Exporter, Best Rugs Exporter India, Largest Rugs Manufacturer India, Flat weave Manufacturers and Exporter, Handmade Rugs from India, Handmade Rugs Exporter India, Largest Carpets Manufacturer India, Hand Knotted Rugs Manufacturer in India, Hand Knotted Carpet Manufacturer in India, Designer Carpet Manufacturers in India, Bhadohi Rugs Exporters, Bhadohi Carpets Exporters, Wool Silk Rugs in India, Area Rugs India Supplier, Largest Rugs Manufacturer India, Rugs exporters in india, Rug exporters in india.
+              The Phenix Carpet, India's Largest Manufacturer of Rugs/Carpets, Wool Silk Rugs in India, Area Rugs India Supplier, Largest Rugs Manufacturer India, Rugs exporters in india, Rug exporters in india.
             </p>
           </div>
         </div>
