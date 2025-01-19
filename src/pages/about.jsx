@@ -242,22 +242,25 @@ const AboutPage = () => {
         </div>
 
         {/* Clients Section */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 ">
           <div
-            className=""
+            className="py-5"
             style={{
               backgroundImage:
                 "url('https://thephenixcarpets.com/wp-content/uploads/2023/05/HL11.jpg')",
             }}
           >
-            <h2 className="text-3xl tracking-[0.05rem] font-bold mb-3 text-gray-800">
+            <h2 className="text-3xl tracking-[0.05rem] font-bold mb-3  text-gray-800">
               Our Clients
             </h2>
-            <p className="text-xl text-gray-600 mb-12 tracking-[0.04rem]">
+            <p className="text-xl text-gray-800  tracking-[0.04rem] pb-6">
               We provide quality carpets to countries like
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-5 py-8"    style={{
+              backgroundImage:
+                "url('https://thephenixcarpets.com/wp-content/uploads/2023/05/HL07.jpg')",
+            }}>
             {countries.map((country) => (
               <div key={country.code} className="flex flex-col items-center">
                 <div className="mb-3 rounded overflow-hidden shadow-sm">
