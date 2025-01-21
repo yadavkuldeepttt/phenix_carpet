@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
-
+import { RiTwitterXFill } from 'react-icons/ri';
+import { FaTelegramPlane } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white">
@@ -22,7 +23,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a href="#" className="hover:text-blue-400 transition-colors">
-                <Twitter size={20} />
+                <RiTwitterXFill size={20} />
               </a>
               <a href="#" className="hover:text-pink-400 transition-colors">
                 <Instagram size={20} />
@@ -30,7 +31,12 @@ const Footer = () => {
               <a href="#" className="hover:text-blue-500 transition-colors">
                 <Linkedin size={20} />
               </a>
+              <a href="#" className="hover:text-blue-500 transition-colors">
+                <FaTelegramPlane size={20} />
+              </a>
+              
             </div>
+
           </div>
 
           {/* Quick Links */}
@@ -53,7 +59,7 @@ const Footer = () => {
             <div className="space-y-4 text-sm tracking-[0.04rem] text-slate-300">
               <div className="flex  items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                <span className="text-start">Near Railway station, Mondh road, Bhadohi, Uttar Pradesh, India- 221402</span>
+                <span className="text-start">Gaderiyapur, Mondh, Bhadodi, Uttar Pradesh, India 221406</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />

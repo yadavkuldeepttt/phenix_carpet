@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X, Phone, ChevronDown, Search, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
+import SearchModal from './searchModal';
+import { RiTwitterXFill } from 'react-icons/ri';
+import { FaTelegram, FaTelegramPlane } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,8 +17,8 @@ const Header = () => {
       href: '#',
       submenu: ['Hand Tufted Carpets', 'Modern Carpets', 'Traditional Carpets']
     },
-    { name: 'LUXOR COLLECTION', href: '#' },
-    { name: 'HOSPITALITY COLLECTION', href: '#' },
+    { name: 'LUXOR COLLECTION', href: '/luxor-collection' },
+    { name: 'HOSPITALITY COLLECTION', href: '/hospitality-collection' },
     { name: 'CONTACT US', href: '/contact' },
   ];
 
@@ -39,14 +42,15 @@ const Header = () => {
           <div className="flex items-center space-x-4 text-sm">
             <span className="flex items-center">
               <Phone className="w-4 h-4 mr-2" />
-              Near Railway station, Mondh road, Bhadohi, UP, India- 221402
+              Gaderiyapur, Mondh, Bhadodi, Uttar Pradesh, India 221406
             </span>
           </div>
           <div className="hidden md:flex space-x-4">
             <Instagram className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             <Facebook className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
-            <Twitter className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            <RiTwitterXFill className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             <Linkedin className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            <FaTelegramPlane className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
           </div>
         </div>
       </div>
@@ -89,9 +93,9 @@ const Header = () => {
             </div>
 
             {/* Search Icon */}
-            <div className="hidden md:flex items-center">
-              <Search className="w-5 h-5 text-gray-600 cursor-pointer hover:text-blue-600 transition-colors" />
-            </div>
+       
+
+            <SearchModal />
 
             {/* Mobile menu button */}
             <div className="md:hidden">
