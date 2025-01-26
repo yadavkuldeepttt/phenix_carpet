@@ -12,6 +12,8 @@ import HospitalityCollection from "./pages/product/hospitality/hospitalityCollec
 import ProductDetails from "./pages/product/hospitality/productDetails.jsx";
 import LuxuryCollection from "./pages/product/luxury/luxuryCollection.jsx";
 import ProductDetailsLuxury from "./pages/product/luxury/productDetailsLuxury.jsx";
+import ProductDetailsCategory from "./pages/product/items/productDetailsCategory.jsx";
+import ProductsPage from "./pages/product/items/productsPage.jsx";
 
 class App extends Component {
   render() {
@@ -38,6 +40,10 @@ class App extends Component {
               path="/luxury-collection/:productId"
               element={<ProductDetailsLuxury />}
             />
+            <Route path="/products/:category" element={<ProductsPage />} />
+
+            <Route path="/product/:category/:productId" element={<ProductDetailsCategory />} />
+
           </Routes>
         </div>
         <WhatsAppFloat phoneNumber="" />

@@ -33,11 +33,10 @@ const HospitalityCollection = () => {
     setTimeout(() => setIsAnimating(false), 300); // Match this with CSS animation duration
   };
 
-    // Handle product click
-    const handleProductClick = (productId) => {
-      navigate(`/hospitality-collection/${productId}`);
-    };
-  
+  // Handle product click
+  const handleProductClick = (productId) => {
+    navigate(`/hospitality-collection/${productId}`);
+  };
 
   return (
     <div className="bg-white min-h-screen">

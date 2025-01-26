@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { ChevronRight, ZoomIn } from "lucide-react";
-import { luxuryCollection } from "../../../utils/data";
+import {
+  categoryDescriptions,
+  productsCategoryCollection,
+} from "../../../utils/data";
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
 import QuoteRequestForm from "../quoteRequestForm";
 
-const ProductDetailsLuxury = () => {
+// Helper function to format the category
+const formatCategory = (category) => {
+  return category
+    .toLowerCase() // Convert to lowercase
+    .replace(/-/g, " ") // Replace hyphens with spaces
+    .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize first letters
+};
+
+const ProductDetailsCategory = () => {
   const navigate = useNavigate();
   const [selectedTab, setSelectedTab] = useState("DESCRIPTION");
   const [product, setProduct] = useState(null);
@@ -15,24 +26,33 @@ const ProductDetailsLuxury = () => {
   const [showZoomIcon, setShowZoomIcon] = useState(false);
   const [showQuoteForm, setShowQuoteForm] = useState(false);
 
-  const { productId } = useParams();
+  const { category, productId } = useParams();
+  const formattedCategory = formatCategory(category);
+  const description =
+    categoryDescriptions[formattedCategory] ||
+    "Category description not available.";
 
   useEffect(() => {
-    // Fetch the product based on productId
-    const currentProduct = luxuryCollection.find(
-      (item) => item.id == productId
+    // Fetch the product based on productId and category
+    const currentProduct = productsCategoryCollection.find(
+      (item) =>
+        item.id == productId &&
+        item.category.toLowerCase().replace(" ", "-") === category
     );
-    console.log(currentProduct, "current product");
 
     if (currentProduct) {
       setProduct(currentProduct);
     }
-  }, [productId]);
+  }, [productId, category]);
 
   // Get 4 random products for related section
   const getRandomProducts = () => {
-    const shuffled = [...luxuryCollection]
-      .filter((item) => item.id !== productId)
+    const shuffled = [...productsCategoryCollection]
+      .filter(
+        (item) =>
+          item.id !== productId &&
+          item.category.toLowerCase().replace(" ", "-") === category
+      )
       .sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 4);
   };
@@ -63,23 +83,26 @@ const ProductDetailsLuxury = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Breadcrumb */}
+      {/* Breadcrumb */}
       <div className="container mx-auto px-4 pt-10 pb-5 flex items-center gap-2 text-sm">
         <span
-          className="text-blue-600 text-xs tracking-[0.04rem]  hover:underline cursor-pointer"
+          className="text-blue-600 text-xs tracking-[0.04rem] hover:underline cursor-pointer"
           onClick={() => navigate("/")}
         >
           HOME
         </span>
         <ChevronRight className="w-4 h-4" />
         <span
-          className="text-blue-600 text-xs tracking-[0.04rem]   hover:underline cursor-pointer"
-          onClick={() => navigate("/luxury-collection")}
+          className="text-blue-600 text-xs tracking-[0.04rem] hover:underline cursor-pointer"
+          onClick={() =>
+            navigate(`/products/${category.toLowerCase().replace(" ", "-")}`)
+          }
         >
-          LUXURY COLLECTION
+          {category.toUpperCase()}
         </span>
         <ChevronRight className="w-4 h-4" />
         <span className="tracking-[0.04rem] text-xs uppercase">
-          {product?.name}
+          {category.toUpperCase()} Rugs
         </span>
       </div>
 
@@ -185,17 +208,7 @@ const ProductDetailsLuxury = () => {
               <div className="py-6">
                 {selectedTab === "DESCRIPTION" ? (
                   <p className="text-gray-600 text-start text-sm tracking-[0.03rem] leading-relaxed">
-                    Our luxury rugs collection offers a range of exquisite and
-                    high-quality pieces to elevate the aesthetic of any space.
-                    Each rug is crafted with precision and care using
-                    top-quality materials, including hand-spun silk, New Zealand
-                    wool, and Tibetan wool. Our collection includes a variety of
-                    styles, from traditional to modern, with unique patterns and
-                    textures that add depth and character to any room. Our rugs
-                    are available in various sizes, making them perfect for any
-                    space in your home or office. With our luxury rugs
-                    collection, you can transform your space into a luxurious
-                    and stylish sanctuary.
+                    {description}
                   </p>
                 ) : (
                   <p className="text-gray-600">No reviews yet.</p>
@@ -209,7 +222,10 @@ const ProductDetailsLuxury = () => {
 
         {/* Related Products */}
         {relatedProducts ? (
-          <RelatedProducts relatedProducts={relatedProducts}    category="Luxury Collection"  />
+          <RelatedProducts
+            relatedProducts={relatedProducts}
+            category={product?.category}
+          />
         ) : (
           <p>No Product Found</p>
         )}
@@ -230,4 +246,4 @@ const ProductDetailsLuxury = () => {
   );
 };
 
-export default ProductDetailsLuxury;
+export default ProductDetailsCategory;

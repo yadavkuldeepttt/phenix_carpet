@@ -1,43 +1,61 @@
-import React, { useEffect, useState } from 'react';
-import { Menu, X, Phone, ChevronDown, Search, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
-import SearchModal from './searchModal';
-import { RiTwitterXFill } from 'react-icons/ri';
-import { FaTelegram, FaTelegramPlane } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import {
+  Menu,
+  X,
+  Phone,
+  ChevronDown,
+  Search,
+  Instagram,
+  Facebook,
+  Twitter,
+  Linkedin,
+} from "lucide-react";
+import SearchModal from "./searchModal";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaTelegram, FaTelegramPlane } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const navigate = useNavigate();
 
   const navigation = [
-    { name: 'HOME', href: '/' },
-    { name: 'ABOUT US', href: '/about' },
-    { 
-      name: 'PRODUCTS',
-      href: '#',
-      submenu: ['Hand Tufted Carpets', 'Modern Carpets', 'Traditional Carpets']
+    { name: "HOME", href: "/" },
+    { name: "ABOUT US", href: "/about" },
+    {
+      name: "PRODUCTS",
+      href: "#",
+      submenu: [
+        "Hand Knotted",
+        "Hand Loom",
+        "Hand Tufted",
+        "Flat Weave",
+        "Jute",
+      ],
     },
-    { name: 'LUXOR COLLECTION', href: '/luxor-collection' },
-    { name: 'HOSPITALITY COLLECTION', href: '/hospitality-collection' },
-    { name: 'CONTACT US', href: '/contact' },
+    { name: "LUXOR COLLECTION", href: "/luxury-collection" },
+    { name: "HOSPITALITY COLLECTION", href: "/hospitality-collection" },
+    { name: "CONTACT US", href: "/contact" },
   ];
 
-    // Handle scroll behavior
-    useEffect(() => {
-      const handleScroll = () => {
-        setIsScrolled(window.scrollY > 40);  // 40px is the height of info bar
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-  
+  // Handle scroll behavior
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40); // 40px is the height of info bar
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="relative">
       {/* Top Info Bar */}
-      <div className={`bg-gray-800 text-white py-2 px-4 hidden md:block transition-transform duration-300 ${
-        isScrolled ? '-translate-y-full' : 'translate-y-0'
-      }`}>
+      <div
+        className={`bg-gray-800 text-white py-2 px-4 hidden md:block transition-transform duration-300 ${
+          isScrolled ? "-translate-y-full" : "translate-y-0"
+        }`}
+      >
         <div className="container mx-auto flex  justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
             <span className="flex items-center">
@@ -56,14 +74,17 @@ const Header = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className={`bg-white transition-all duration-400 ${
-        isScrolled ? 'shadow-lg fixed top-0 left-0 right-0 z-50' : 'relative'
-      }`}>
+      <nav
+        className={`bg-white transition-all duration-400 ${
+          isScrolled ? "shadow-lg fixed top-0 left-0 right-0 z-50" : "relative"
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <img src="/images/LOGO3210.png" alt="" className='h-16 w-20' />
+            <img src="/images/LOGO3210.png" alt="" className="h-16 w-20" />
 
+            {/* Desktop Navigation */}
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               {navigation.map((item) => (
@@ -76,12 +97,18 @@ const Header = () => {
                     {item.submenu && <ChevronDown className="ml-1 w-4 h-4" />}
                   </a>
                   {item.submenu && (
-                    <div className="absolute z-10 hidden group-hover:block w-48 bg-white shadow-lg rounded-md mt-2">
+                    <div className="absolute z-50 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 w-48 bg-gray-800 shadow-lg rounded-md mt-2 py-1">
                       {item.submenu.map((subItem) => (
                         <a
                           key={subItem}
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() =>
+                            navigate(
+                              `/products/${subItem
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")}`
+                            )
+                          }
+                          className="block px-4 cursor-pointer py-2 text-sm text-white hover:bg-gray-600 transition-colors duration-200"
                         >
                           {subItem}
                         </a>
@@ -93,7 +120,6 @@ const Header = () => {
             </div>
 
             {/* Search Icon */}
-       
 
             <SearchModal />
 
@@ -114,9 +140,9 @@ const Header = () => {
         </div>
 
         {/* Mobile menu */}
-        <div 
+        <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           } overflow-hidden`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1">

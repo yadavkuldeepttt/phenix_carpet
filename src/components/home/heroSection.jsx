@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { slides } from "../../utils/data";
+import { useNavigate } from "react-router";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  
+  const navigate = useNavigate();
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -23,6 +23,10 @@ const HeroSection = () => {
     }
     return () => clearInterval(timer);
   }, [isAutoPlaying]);
+
+  const handleClick = (link) => {
+    navigate(link);
+  };
 
   return (
     <div className="relative h-[280px] md:h-[550px] overflow-hidden group">
@@ -67,6 +71,7 @@ const HeroSection = () => {
                 {slide.mobile.description}
               </p>
               <button
+                onClick={() => handleClick(slide?.link)}
                 className="group relative bg-white text-gray-900 px-4 md:px-8 py-2 md:py-3 rounded-full font-medium 
                           overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-lg
                           active:scale-95 text-sm md:text-base"

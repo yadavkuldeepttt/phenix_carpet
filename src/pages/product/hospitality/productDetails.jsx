@@ -211,7 +211,7 @@ const ProductDetails = () => {
 
         {/* Related Products */}
         {relatedProducts ? (
-          <RelatedProducts relatedProducts={relatedProducts} />
+          <RelatedProducts relatedProducts={relatedProducts}    category="Hospitality Collection" />
         ) : (
           <p>No Product Found</p>
         )}
