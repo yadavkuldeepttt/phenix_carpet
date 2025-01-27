@@ -97,7 +97,6 @@ const Header = () => {
             <img src="/images/LOGO3210.png" alt="" className="h-16 w-20" />
 
             {/* Desktop Navigation */}
-            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               {navigation.map((item) => (
                 <div key={item.name} className="relative group">
@@ -154,7 +153,7 @@ const Header = () => {
         {/* Mobile menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            isMenuOpen ? "max-h-[100vh] opacity-100" : "max-h-0 opacity-0"
           } overflow-hidden`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
@@ -171,8 +170,14 @@ const Header = () => {
                     {item.submenu.map((subItem) => (
                       <a
                         key={subItem}
-                        href="#"
-                        className="block px-3 py-2 text-sm tracking-[0.05rem] text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                        onClick={() =>
+                          navigate(
+                            `/products/${subItem
+                              .toLowerCase()
+                              .replace(/\s+/g, "-")}`
+                          )
+                        }
+                        className="block cursor-pointer px-3 py-2 text-sm tracking-[0.05rem] text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                       >
                         {subItem}
                       </a>
