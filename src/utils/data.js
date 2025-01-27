@@ -31,7 +31,7 @@ export const slides = [
       description: "Elegant hand-knotted rugs for your space.",
     },
     cta: "Explore Collection",
-    link:"/products/hand-knotted"
+    link: "/products/hand-knotted",
   },
   {
     desktop: {
@@ -46,8 +46,7 @@ export const slides = [
       description: "Luxurious rugs with intricate designs.",
     },
     cta: "View Modern Series",
-    link:"/products/hand-knotted"
-
+    link: "/products/hand-knotted",
   },
   {
     desktop: {
@@ -62,8 +61,7 @@ export const slides = [
       description: "Tradition meets innovation.",
     },
     cta: "Discover More",
-    link:"/luxury-collection"
-
+    link: "/luxury-collection",
   },
   {
     desktop: {
@@ -78,8 +76,7 @@ export const slides = [
       description: "Traditional craftsmanship in every thread.",
     },
     cta: "Discover More",
-    link:"/products/hand-knotted"
-
+    link: "/products/hand-knotted",
   },
   {
     desktop: {
@@ -94,8 +91,7 @@ export const slides = [
       description: "Premium carpets in various materials and designs.",
     },
     cta: "Discover More",
-    link:"/products/hand-tufted"
-
+    link: "/products/hand-tufted",
   },
 ];
 
@@ -527,11 +523,13 @@ export const productsCategoryCollection = [
     size: "on request",
     productId: "KPHO-BNPL-022",
     customization: "on request",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 2,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK09-2-765x1024.jpg",
+    image:
+      "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK09-2-765x1024.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -546,7 +544,8 @@ export const productsCategoryCollection = [
     size: "200x300 cm",
     productId: "KPHO-BNPL-023",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 3,
@@ -565,7 +564,8 @@ export const productsCategoryCollection = [
     size: "250x350 cm",
     productId: "KPHO-BNPL-024",
     customization: "full",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
 
   {
@@ -585,7 +585,8 @@ export const productsCategoryCollection = [
     size: "250x350 cm",
     productId: "KPHO-BNPL-024",
     customization: "full",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
 
   {
@@ -605,7 +606,8 @@ export const productsCategoryCollection = [
     size: "250x350 cm",
     productId: "KPHO-BNPL-024",
     customization: "full",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
 
   {
@@ -625,9 +627,9 @@ export const productsCategoryCollection = [
     size: "250x350 cm",
     productId: "KPHO-BNPL-024",
     customization: "full",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
-  
 
   {
     id: 19,
@@ -646,12 +648,10 @@ export const productsCategoryCollection = [
     size: "250x350 cm",
     productId: "KPHO-BNPL-024",
     customization: "full",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
-  
-  
-  
-  
+
   // Hand Loom Category
   {
     id: 4,
@@ -670,7 +670,8 @@ export const productsCategoryCollection = [
     size: "160x230 cm",
     productId: "PLHO-BNPL-025",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 5,
@@ -689,7 +690,8 @@ export const productsCategoryCollection = [
     size: "200x200 cm",
     productId: "PLHO-BNPL-026",
     customization: "on request",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 6,
@@ -708,9 +710,10 @@ export const productsCategoryCollection = [
     size: "120x180 cm",
     productId: "PLHO-BNPL-027",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
-  
+
   // Hand Tufted Category
   {
     id: 7,
@@ -729,7 +732,8 @@ export const productsCategoryCollection = [
     size: "180x270 cm",
     productId: "PTHO-BNPL-028",
     customization: "on request",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 8,
@@ -748,7 +752,8 @@ export const productsCategoryCollection = [
     size: "250x250 cm",
     productId: "PTHO-BNPL-029",
     customization: "full",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 9,
@@ -767,9 +772,10 @@ export const productsCategoryCollection = [
     size: "160x230 cm",
     productId: "PTHO-BNPL-030",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
-  
+
   // Flat Weave Category
   {
     id: 10,
@@ -788,7 +794,8 @@ export const productsCategoryCollection = [
     size: "120x180 cm",
     productId: "PFHO-BNPL-031",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 11,
@@ -807,7 +814,8 @@ export const productsCategoryCollection = [
     size: "200x200 cm",
     productId: "PFHO-BNPL-032",
     customization: "on request",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 12,
@@ -826,9 +834,10 @@ export const productsCategoryCollection = [
     size: "150x220 cm",
     productId: "PFHO-BNPL-033",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
-  
+
   // Jute Category
   {
     id: 13,
@@ -847,7 +856,8 @@ export const productsCategoryCollection = [
     size: "140x200 cm",
     productId: "PJHO-BNPL-034",
     customization: "limited",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 14,
@@ -866,7 +876,8 @@ export const productsCategoryCollection = [
     size: "180x180 cm",
     productId: "PJHO-BNPL-035",
     customization: "on request",
-    origin: "India"
+    origin: "India",
+    reviews: [],
   },
   {
     id: 15,
@@ -885,9 +896,11 @@ export const productsCategoryCollection = [
     size: "160x230 cm",
     productId: "PJHO-BNPL-036",
     customization: "limited",
-    origin: "India"
-  }
+    origin: "India",
+    reviews: [],
+  },
 ];
+
 export const categoryDescriptions = {
   "Hand Knotted": `Hand-knotted rugs are premium quality floor coverings that are handcrafted by skilled artisans. They are created by knotting individual pieces of wool or silk onto a warp and weft frame, one knot at a time. These rugs are known for their exceptional beauty, durability, and impressive colors. They are considered a true work of art and take months to complete. Hand-knotted rugs have a rich legacy that traces back to ancient Persia and the nomadic tribes of Central Asia (Bhadohi, India). Today, these rugs continue to make a statement in interior design and are cherished heirlooms that are passed down from generation to generation.`,
   "Hand Loom": `Hand loom carpets are traditional textiles that are made using traditional weaving techniques. These carpets are crafted by hand on a loom, with each thread individually woven to create intricate patterns and designs. The process of making a hand loom carpet is labor-intensive and less time-consuming, but the end result is a unique, one-of-a-kind piece that is durable and beautiful. Hand loom carpets can be made using a variety of materials, including wool, cotton, silk, and jute. These carpets are often used as a decorative element in home interiors, adding warmth and texture to a room.`,

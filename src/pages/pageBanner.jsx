@@ -56,10 +56,6 @@ const PageBanner = ({
           </ol>
         </div>
 
-        {/* Decorative Elements */}
-        <div className="absolute bottom-0 left-0 w-full">
-          <div className="h-px bg-gradient-to-r from-transparent via-yellow-300/30 to-transparent"></div>
-        </div>
       </div>
     </nav>
   );

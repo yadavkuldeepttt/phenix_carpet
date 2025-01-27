@@ -57,7 +57,7 @@ const ProductsPage = () => {
       <PageBanner
         title={normalizedCategory}
         subtitle="Luxury Carpets for Premium Spaces"
-        backgroundImage="url('https://thephenixcarpets.com/wp-content/uploads/2023/04/001.jpg')"
+        backgroundImage="url('https://thephenixcarpets.com/wp-content/uploads/2023/04/004.jpg')"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: `${normalizedCategory}` },

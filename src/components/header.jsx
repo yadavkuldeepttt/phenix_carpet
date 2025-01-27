@@ -64,11 +64,23 @@ const Header = () => {
             </span>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Instagram className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
-            <Facebook className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
-            <RiTwitterXFill className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
-            <Linkedin className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            <a href="https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+              <Instagram className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            </a>
+            <a href="https://www.facebook.com/Pawan.TPC?mibextid=ZbWKwL" target="_blank">
+              <Facebook className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors"  />
+            </a>
+            <a href="https://twitter.com/CarpetPhenix?t=gB5g2YiB6a9hSbX_jvKgow&s=09" target="_blank">
+              <RiTwitterXFill className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            </a>
+
+            <a href="https://www.linkedin.com/company/the-phenix-carprt/" target="_blank">
+              <Linkedin className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            </a>
+            <a href="#" target="_blank">
+
             <FaTelegramPlane className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            </a>
           </div>
         </div>
       </div>

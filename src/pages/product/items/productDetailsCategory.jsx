@@ -8,6 +8,7 @@ import {
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
 import QuoteRequestForm from "../quoteRequestForm";
+import Reviews from "../reviews";
 
 // Helper function to format the category
 const formatCategory = (category) => {
@@ -211,7 +212,7 @@ const ProductDetailsCategory = () => {
                     {description}
                   </p>
                 ) : (
-                  <p className="text-gray-600">No reviews yet.</p>
+                  <Reviews product={product} setProduct={setProduct} />
                 )}
               </div>
             </div>
