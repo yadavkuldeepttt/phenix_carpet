@@ -5,6 +5,7 @@ import { hospitalityCollection } from "../../../utils/data";
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
 import QuoteRequestForm from "../quoteRequestForm";
+import Reviews from "../reviews";
 
 const ProductDetails = () => {
   const navigate = useNavigate();
@@ -178,7 +179,7 @@ const ProductDetails = () => {
                     }`}
                     onClick={() => setSelectedTab("REVIEWS")}
                   >
-                    REVIEWS (0)
+                    REVIEWS ({product.reviews.length || 0})
                   </button>
                 </div>
               </div>
@@ -200,7 +201,8 @@ const ProductDetails = () => {
                     also enhance the overall appearance of any space.
                   </p>
                 ) : (
-                  <p className="text-gray-600">No reviews yet.</p>
+                  <Reviews product={product} setProduct={setProduct} />
+
                 )}
               </div>
             </div>

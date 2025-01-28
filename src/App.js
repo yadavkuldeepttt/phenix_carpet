@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router";
+import {Routes, Route } from "react-router";
 import Header from "./components/header";
 import Home from "./pages/home.jsx";
 import Footer from "./components/footer.jsx";
 import WhatsAppFloat from "./components/whatsappFloat.jsx";
-import Contact from "./pages/contact.jsx";
 import AboutPage from "./pages/about.jsx";
 import ContactPage from "./pages/contact.jsx";
 import HospitalityCollection from "./pages/product/hospitality/hospitalityCollection.jsx";
@@ -46,7 +45,7 @@ class App extends Component {
 
           </Routes>
         </div>
-        <WhatsAppFloat phoneNumber="" />
+        <WhatsAppFloat phoneNumber="9454049020" />
         <Footer />
       </div>
     );

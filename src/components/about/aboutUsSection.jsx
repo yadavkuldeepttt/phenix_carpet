@@ -58,7 +58,7 @@ const AboutUsSection = () => {
           </div>
 
           {/* Right Column - Leadership */}
-          <div className="relative">
+          {/* <div className="relative">
             <div className="grid grid-cols-2 gap-6">
               {teamMembers.map((member, index) => (
                 <div
@@ -92,6 +92,19 @@ const AboutUsSection = () => {
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div className="absolute -z-10 -bottom-6 -right-6 w-24 h-24 border-r-2 border-b-2 border-gray-200"></div>
+            <div className="absolute -z-10 -top-6 -left-6 w-24 h-24 border-l-2 border-t-2 border-gray-200"></div>
+          </div> */}
+
+          <div className="relative">
+            <div className="overflow-hidden rounded-xl shadow-md bg-white">
+              <img
+                src="/images/about-us.jpg"
+                alt="Leadership"
+                className="object-fit"
+              />
             </div>
 
             {/* Decorative Elements */}

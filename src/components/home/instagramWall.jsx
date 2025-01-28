@@ -1,77 +1,26 @@
 import React from "react";
 import { Instagram } from "lucide-react";
+import { collectionsInstagramWall } from "../../utils/data";
 
 const InstagramWall = () => {
-  const collections = [
-    {
-      id: 1,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc03-scaled.jpg",
-      link: "https://instagram.com/collection1",
-    },
-    {
-      id: 2,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc02-scaled.jpg",
-      link: "https://instagram.com/collection2",
-    },
-    {
-      id: 3,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc06-1-scaled.jpg",
-      link: "https://instagram.com/collection3",
-    },
-    {
-      id: 4,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc04-scaled.jpg",
-      link: "https://instagram.com/collection4",
-    },
-    {
-      id: 5,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/Untitled-1-copy.jpg",
-      link: "https://instagram.com/collection5",
-    },
-    {
-      id: 6,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc05-scaled.jpg",
-      link: "https://instagram.com/collection5",
-    },
-    {
-      id: 7,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/Untitled-2.jpg",
-      link: "https://instagram.com/collection5",
-    },
-    {
-      id: 8,
-      image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/Untitled-2.jpg",
-      link: "https://instagram.com/collection6",
-    },
-  ];
+ 
 
   return (
-    <div className="w-full max-w-8xl mx-auto px-4 py-16">
+    <div className="w-full max-w-8xl mx-auto px-4 pt-[8rem] pb-[10rem]">
       <h2 className="text-3xl tracking-[0.05rem] font-bold text-center mb-12">INSTAGRAM WALL</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {collections.map((collection) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-2">
+        {collectionsInstagramWall.map((collection) => (
           <div key={collection.id} className="group relative">
             {/* Images Stack */}
             <div className="relative h-72 transition-all duration-500">
               <div
-                className={`absolute inset-0 transition-all duration-500 transform
-                  
-                    group-hover:rotate-0 group-hover:translate-y-50
-                    group-hover:duration-300`}
+                className="absolute inset-0 transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer"
               >
                 <img
                   src={collection.image}
                   alt={`${collection.title}`}
-                  className="w-full h-full object-cover rounded-lg shadow-md"
+                  className="object-fit rounded-lg shadow-sm"
                 />
               </div>
             </div>
@@ -86,8 +35,6 @@ const InstagramWall = () => {
               <Instagram className="w-6 h-6 text-pink-600" />
             </a>
 
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300 rounded-lg pointer-events-none" />
           </div>
         ))}
       </div>

@@ -101,7 +101,7 @@ const AboutPage = () => {
           </div>
 
           {/* Right Column - Leadership */}
-          <div className="relative">
+          {/* <div className="relative">
             <div className="grid grid-cols-2 gap-6">
               {teamMembers.map((member, index) => (
                 <div
@@ -135,6 +135,19 @@ const AboutPage = () => {
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div className="absolute -z-10 -bottom-6 -right-6 w-24 h-24 border-r-2 border-b-2 border-gray-200"></div>
+            <div className="absolute -z-10 -top-6 -left-6 w-24 h-24 border-l-2 border-t-2 border-gray-200"></div>
+          </div> */}
+
+          <div className="relative">
+            <div className="overflow-hidden rounded-xl shadow-md bg-white">
+              <img
+                src="/images/about-us.jpg"
+                alt="Leadership"
+                className="object-fit"
+              />
             </div>
 
             {/* Decorative Elements */}
@@ -257,10 +270,13 @@ const AboutPage = () => {
               We provide quality carpets to countries like
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-5 py-8"    style={{
+          <div
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-5 py-8"
+            style={{
               backgroundImage:
                 "url('https://thephenixcarpets.com/wp-content/uploads/2023/05/HL07.jpg')",
-            }}>
+            }}
+          >
             {countries.map((country) => (
               <div key={country.code} className="flex flex-col items-center">
                 <div className="mb-3 rounded overflow-hidden shadow-sm">
@@ -277,7 +293,6 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-        
       </div>
     </div>
   );

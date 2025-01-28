@@ -202,7 +202,7 @@ const ProductDetailsCategory = () => {
                     }`}
                     onClick={() => setSelectedTab("REVIEWS")}
                   >
-                    REVIEWS (0)
+                    REVIEWS ({product.reviews.length || 0})
                   </button>
                 </div>
               </div>

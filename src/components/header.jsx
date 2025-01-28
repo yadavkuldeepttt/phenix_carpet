@@ -48,6 +48,16 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleMenuNavigation = (item) =>{
+    navigate(
+      `/products/${item
+        .toLowerCase()
+        .replace(/\s+/g, "-")}`
+    )
+
+    setIsMenuOpen(false);
+  }
+
   return (
     <div className="relative">
       {/* Top Info Bar */}
@@ -113,11 +123,7 @@ const Header = () => {
                         <a
                           key={subItem}
                           onClick={() =>
-                            navigate(
-                              `/products/${subItem
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")}`
-                            )
+                           handleMenuNavigation(subItem)
                           }
                           className="block px-4 cursor-pointer py-2 text-sm text-white hover:bg-gray-600 transition-colors duration-200"
                         >
@@ -171,11 +177,7 @@ const Header = () => {
                       <a
                         key={subItem}
                         onClick={() =>
-                          navigate(
-                            `/products/${subItem
-                              .toLowerCase()
-                              .replace(/\s+/g, "-")}`
-                          )
+                         handleMenuNavigation(subItem)
                         }
                         className="block cursor-pointer px-3 py-2 text-sm tracking-[0.05rem] text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                       >

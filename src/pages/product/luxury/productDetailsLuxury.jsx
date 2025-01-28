@@ -178,7 +178,7 @@ const ProductDetailsLuxury = () => {
                     }`}
                     onClick={() => setSelectedTab("REVIEWS")}
                   >
-                    REVIEWS (0)
+                    REVIEWS ({product.reviews.length || 0})
                   </button>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const ProductDetailsLuxury = () => {
                     and stylish sanctuary.
                   </p>
                 ) : (
-                  <p className="text-gray-600">No reviews yet.</p>
+                  <Reviews product={product} setProduct={setProduct} />
                 )}
               </div>
             </div>

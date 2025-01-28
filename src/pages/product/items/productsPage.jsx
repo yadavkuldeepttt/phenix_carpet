@@ -97,7 +97,7 @@ const ProductsPage = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-[20rem] object-cover transform group-hover:scale-105 transition-transform duration-300"
+                    className={`w-full  ${product.category === "Jute" ? "h-[17rem]" : "h-[20rem]"} object-cover transform group-hover:scale-105 transition-transform duration-300`}
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300" />
                 </div>
