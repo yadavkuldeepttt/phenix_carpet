@@ -101,7 +101,7 @@ export const categories = [
     name: "Hand Knotted Rugs",
     image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK04.jpg",
     description: "Intricately crafted traditional rugs with detailed patterns",
-    slug: "hand-knotted-rugs",
+    slug: "products/hand-knotted",
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ export const categories = [
     image:
       "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL07-225x300.jpg",
     description: "Contemporary rugs with subtle, minimalist designs",
-    slug: "hand-loom-rugs",
+    slug: "products/hand-loom",
   },
   {
     id: 3,
@@ -117,7 +117,7 @@ export const categories = [
     image:
       "https://thephenixcarpets.com/wp-content/uploads/2023/05/01-1-1-224x300.jpg",
     description: "Modern rugs with bold, geometric patterns",
-    slug: "hand-tufted-rugs",
+    slug: "products/hand-tufted",
   },
   {
     id: 4,
@@ -125,7 +125,7 @@ export const categories = [
     image:
       "https://thephenixcarpets.com/wp-content/uploads/2023/05/003-768x1028-1-224x300.jpg",
     description: "Versatile rugs perfect for high-traffic areas",
-    slug: "flat-weave-rugs",
+    slug: "products/flat-weave",
   },
   {
     id: 5,
@@ -133,7 +133,7 @@ export const categories = [
     image:
       "https://thephenixcarpets.com/wp-content/uploads/2023/05/20-1-224x300.jpg",
     description: "Eco-friendly rugs with natural textures",
-    slug: "jute-rugs",
+    slug: "products/jute",
   },
 ];
 

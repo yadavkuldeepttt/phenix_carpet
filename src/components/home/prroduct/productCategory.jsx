@@ -1,13 +1,17 @@
 import React from 'react';
 import { ArrowRight, Plus } from 'lucide-react';
 import {categories} from "../../../utils/data"
+import { useNavigate } from 'react-router';
 
 const ProductCategory = () => {
 
+  const navigate = useNavigate();
 
   const handleCategoryClick = (slug) => {
     // Navigate to category page
     console.log(`Navigating to ${slug}`);
+    navigate(slug);
+
   };
 
   return (
