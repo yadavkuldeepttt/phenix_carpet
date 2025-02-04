@@ -124,19 +124,16 @@ const ProductDetailsLuxury = () => {
                 {/* Product details grid */}
                 <ul className="grid grid-cols-1 gap-4 max-sm:ps-5 list-disc  ">
                   {Object.entries({
-                    Availability: product.availability,
-                    Rating: "★".repeat(product.rating),
-                    "Product Code": product.productCode,
-                    Pattern: product.pattern,
-                    Style: product.style,
-                    Material: product.material,
-                    "Production Type": product.productionType,
+                    Quality: product.quality,
+                    Color: product.color,
+                    "Pile Composition": product.pileComposition,
+                    "Total Height": product.totalHeight,
                     "Pile Height": product.pileHeight,
-                    Shape: product.shape,
-                    Size: product.size,
-                    ID: product.productId,
-                    Customization: product.customization,
-                    Origin: product.origin,
+                    "Pile Weight": product.pileWeight,
+                    "Total Weight": product.totalWeight,
+                    "Max. Size": product.maxSize,
+                    "Style Number": product.styleNumber,
+                    "Sample Size": product.sampleSize,
                   }).map(([key, value]) => (
                     <li key={key} className="flex text-sm items-start gap-2">
                       <span className="font-medium  text-start min-w-[140px]">
@@ -209,7 +206,10 @@ const ProductDetailsLuxury = () => {
 
         {/* Related Products */}
         {relatedProducts ? (
-          <RelatedProducts relatedProducts={relatedProducts}    category="Luxury Collection"  />
+          <RelatedProducts
+            relatedProducts={relatedProducts}
+            category="Luxury Collection"
+          />
         ) : (
           <p>No Product Found</p>
         )}

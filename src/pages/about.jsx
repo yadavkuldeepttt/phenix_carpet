@@ -56,6 +56,16 @@ const AboutPage = () => {
       code: "JP",
       img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/Flag_of_Japan_with_border-300x240.png",
     },
+    {
+      name: "ITALY",
+      code: "IY",
+      img: "https://media.istockphoto.com/id/1217765776/photo/flag-of-italy-blowing-in-the-wind.jpg?s=612x612&w=0&k=20&c=Nwe1XWUnwkFsvuGulSzq4gG_wM0LtZ5EO--M5UEQP_A=",
+    },
+    {
+      name: "NETHERLANDS",
+      code: "ND",
+      img: "https://media.istockphoto.com/id/1007857974/vector/netherlands-round-flag-vector-flat-icon.jpg?s=612x612&w=0&k=20&c=X_4zYpFnqTaMWQg58p-CpMMTwc5c7RpQTZkif6Yt0HE=",
+    },
   ];
   return (
     <div className="bg-white ">
@@ -78,7 +88,7 @@ const AboutPage = () => {
 
             <div className="grid grid-cols-2 gap-4 py-6">
               {[
-                "Hand Knotted",
+                "Hand Knots",
                 "Natural Dyes",
                 "Expert Weavers",
                 "Premium Materials",
@@ -258,10 +268,7 @@ const AboutPage = () => {
         <div className="text-center mb-8 ">
           <div
             className="py-5"
-            style={{
-              backgroundImage:
-                "url('https://thephenixcarpets.com/wp-content/uploads/2023/05/HL11.jpg')",
-            }}
+         
           >
             <h2 className="text-3xl tracking-[0.05rem] font-bold mb-3  text-gray-800">
               Our Clients
@@ -272,10 +279,7 @@ const AboutPage = () => {
           </div>
           <div
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-5 py-8"
-            style={{
-              backgroundImage:
-                "url('https://thephenixcarpets.com/wp-content/uploads/2023/05/HL07.jpg')",
-            }}
+          
           >
             {countries.map((country) => (
               <div key={country.code} className="flex flex-col items-center">

@@ -71,8 +71,11 @@ const Footer = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-blue-500 transition-colors">
+              <a href="http://t.me/the_phenix_carpet" className="hover:text-blue-500 transition-colors">
                 <FaTelegramPlane size={20} />
+              </a>
+              <a href="https://maps.app.goo.gl/KZByNVJAVXbnmgb97" className="hover:text-blue-500 transition-colors">
+                <MapPin size={20} />
               </a>
             </div>
           </div>
@@ -107,7 +110,7 @@ const Footer = () => {
               <div className="flex  items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <span className="text-start">
-                  Gaderiyapur, Mondh, Bhadodi, Uttar Pradesh, India 221406
+                  Gaderiyapur, Mondh, Bhadohi, Uttar Pradesh, India 221406
                 </span>
               </div>
               <div className="flex items-center space-x-3">

@@ -9,6 +9,7 @@ import {
   Facebook,
   Twitter,
   Linkedin,
+  MapPin,
 } from "lucide-react";
 import SearchModal from "./searchModal";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -48,15 +49,11 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleMenuNavigation = (item) =>{
-    navigate(
-      `/products/${item
-        .toLowerCase()
-        .replace(/\s+/g, "-")}`
-    )
+  const handleMenuNavigation = (item) => {
+    navigate(`/products/${item.toLowerCase().replace(/\s+/g, "-")}`);
 
     setIsMenuOpen(false);
-  }
+  };
 
   return (
     <div className="relative">
@@ -70,26 +67,40 @@ const Header = () => {
           <div className="flex items-center space-x-4 text-sm">
             <span className="flex items-center">
               <Phone className="w-4 h-4 mr-2" />
-              Gaderiyapur, Mondh, Bhadodi, Uttar Pradesh, India 221406
+              Gaderiyapur, Mondh, Bhadohi, Uttar Pradesh, India 221406
             </span>
           </div>
           <div className="hidden md:flex space-x-4">
-            <a href="https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+            <a
+              href="https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ=="
+              target="_blank"
+            >
               <Instagram className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             </a>
-            <a href="https://www.facebook.com/Pawan.TPC?mibextid=ZbWKwL" target="_blank">
-              <Facebook className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors"  />
+            <a
+              href="https://www.facebook.com/Pawan.TPC?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <Facebook className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             </a>
-            <a href="https://twitter.com/CarpetPhenix?t=gB5g2YiB6a9hSbX_jvKgow&s=09" target="_blank">
+            <a
+              href="https://twitter.com/CarpetPhenix?t=gB5g2YiB6a9hSbX_jvKgow&s=09"
+              target="_blank"
+            >
               <RiTwitterXFill className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             </a>
 
-            <a href="https://www.linkedin.com/company/the-phenix-carprt/" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/the-phenix-carprt/"
+              target="_blank"
+            >
               <Linkedin className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             </a>
-            <a href="#" target="_blank">
-
-            <FaTelegramPlane className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            <a href="http://t.me/the_phenix_carpet" target="_blank">
+              <FaTelegramPlane className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
+            </a>
+            <a href="https://maps.app.goo.gl/KZByNVJAVXbnmgb97" target="_blank">
+              <MapPin className="w-5 h-5 hover:text-blue-400 cursor-pointer transition-colors" />
             </a>
           </div>
         </div>
@@ -122,9 +133,7 @@ const Header = () => {
                       {item.submenu.map((subItem) => (
                         <a
                           key={subItem}
-                          onClick={() =>
-                           handleMenuNavigation(subItem)
-                          }
+                          onClick={() => handleMenuNavigation(subItem)}
                           className="block px-4 cursor-pointer py-2 text-sm text-white hover:bg-gray-600 transition-colors duration-200"
                         >
                           {subItem}
@@ -176,9 +185,7 @@ const Header = () => {
                     {item.submenu.map((subItem) => (
                       <a
                         key={subItem}
-                        onClick={() =>
-                         handleMenuNavigation(subItem)
-                        }
+                        onClick={() => handleMenuNavigation(subItem)}
                         className="block cursor-pointer px-3 py-2 text-sm tracking-[0.05rem] text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                       >
                         {subItem}

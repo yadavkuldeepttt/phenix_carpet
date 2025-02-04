@@ -81,6 +81,20 @@ const ProductDetailsCategory = () => {
     });
   };
 
+
+  const renderStars = (rating) => {
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 === 0.5;
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+    
+    return (
+      "★".repeat(fullStars) + 
+      (hasHalfStar ? "☆" : "") + 
+      "☆".repeat(emptyStars)
+    );
+  };
+  
+
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Breadcrumb */}
@@ -149,7 +163,7 @@ const ProductDetailsCategory = () => {
                 <ul className="grid grid-cols-1 gap-4 max-sm:ps-5 list-disc  ">
                   {Object.entries({
                     Availability: product.availability,
-                    Rating: "★".repeat(product.rating),
+                    Rating:renderStars(product.rating),
                     "Product Code": product.productCode,
                     Pattern: product.pattern,
                     Style: product.style,
