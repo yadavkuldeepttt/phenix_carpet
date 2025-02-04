@@ -35,7 +35,7 @@ const AboutUsSection = () => {
 
             <div className="grid grid-cols-2 gap-4 py-6">
               {[
-                "Hand Knotted",
+                "Hand Knots",
                 "Natural Dyes",
                 "Expert Weavers",
                 "Premium Materials",
