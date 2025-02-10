@@ -20,13 +20,13 @@ export const teamMembers = [
 export const slides = [
   {
     desktop: {
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/04/001.jpg",
+      image: "https://thephenixcarpets.com/images/001_1.jpg",
       title: "Luxor Hand Knotted Rugs",
       description:
         "Luxury hand-knotted rugs are one of the most sought-after decor items due to their sheer elegance and opulence.",
     },
     mobile: {
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/06/001.jpg",
+      image: "/images/001_2.jpg",
       title: "Luxor Rugs",
       description: "Elegant hand-knotted rugs for your space.",
     },
@@ -35,13 +35,13 @@ export const slides = [
   },
   {
     desktop: {
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/04/008.jpg",
+      image: "/images/008_1.jpg",
       title: "Hand Knotted Rugs",
       description:
         "Hand knotted rugs are also known for their luxurious feel. The intricate design and soft pile of the rug can add elegance and sophistication to any space.",
     },
     mobile: {
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/06/008.jpg",
+      image: "/images/008_2.jpg",
       title: "Hand Knotted",
       description: "Luxurious rugs with intricate designs.",
     },
@@ -51,13 +51,13 @@ export const slides = [
   {
     desktop: {
       image: "/images/luxury_defined.jpeg",
-      title: "Luxury Defined",
+      title: "Wall to Wall Carpets",
       description:
         "Experience the perfect harmony of tradition and innovation in every thread.",
     },
     mobile: {
       image: "/images/luxury_defined.jpeg",
-      title: "Luxury Defined",
+      title: "Wall to Wall Carpets",
       description: "Tradition meets innovation.",
     },
     cta: "Discover More",
@@ -80,13 +80,13 @@ export const slides = [
   },
   {
     desktop: {
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/04/002.jpg",
+      image: "/images/002_1.jpg",
       title: "Hand tufted Carpets",
       description:
         "Hand tufted carpets come in various shapes, sizes, and designs. They can be made from a wide range of materials, including wool, silk, cotton, and synthetic fibers",
     },
     mobile: {
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/06/002.jpg",
+      image: "/images/002_2.jpg",
       title: "Hand Tufted",
       description: "Premium carpets in various materials and designs.",
     },
@@ -99,7 +99,7 @@ export const categories = [
   {
     id: 1,
     name: "Hand Knotted Rugs",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK04.jpg",
+    image: "/images/HK04.jpg",
     description: "Intricately crafted traditional rugs with detailed patterns",
     slug: "products/hand-knotted",
   },
@@ -107,7 +107,7 @@ export const categories = [
     id: 2,
     name: "Hand Loom Rugs",
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL07-225x300.jpg",
+      "/images/HL07-225x300.jpg",
     description: "Contemporary rugs with subtle, minimalist designs",
     slug: "products/hand-loom",
   },
@@ -115,7 +115,7 @@ export const categories = [
     id: 3,
     name: "Hand Tufted Rugs",
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/01-1-1-224x300.jpg",
+      "/images/01-1-1-224x300.jpg",
     description: "Modern rugs with bold, geometric patterns",
     slug: "products/hand-tufted",
   },
@@ -123,7 +123,7 @@ export const categories = [
     id: 4,
     name: "Flat Weave Rugs",
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/003-768x1028-1-224x300.jpg",
+      "/images/003-768x1028-1-224x300.jpg",
     description: "Versatile rugs perfect for high-traffic areas",
     slug: "products/flat-weave",
   },
@@ -131,7 +131,7 @@ export const categories = [
     id: 5,
     name: "Jute Rugs",
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/20-1-224x300.jpg",
+      "/images/20-1-224x300.jpg",
     description: "Eco-friendly rugs with natural textures",
     slug: "products/jute",
   },
@@ -140,7 +140,7 @@ export const categories = [
 export const hospitalityCollection = [
   {
     id: 1,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/701.jpg",
+    image: "/images/701.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 4.5,
@@ -159,7 +159,7 @@ export const hospitalityCollection = [
   },
   {
     id: 2,
-    image: "	https://thephenixcarpets.com/wp-content/uploads/2023/05/702.jpg",
+    image: "/images/702.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -178,7 +178,7 @@ export const hospitalityCollection = [
   },
   {
     id: 3,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/703.jpg",
+    image: "/images/703.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -197,7 +197,7 @@ export const hospitalityCollection = [
   },
   {
     id: 4,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/704-1.jpg",
+    image: "/images/704-1.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -216,7 +216,7 @@ export const hospitalityCollection = [
   },
   {
     id: 5,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/705.jpg",
+    image: "/images/705.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -235,7 +235,7 @@ export const hospitalityCollection = [
   },
   {
     id: 6,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/706.jpg",
+    image: "/images/706.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -254,7 +254,7 @@ export const hospitalityCollection = [
   },
   {
     id: 7,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/707.jpg",
+    image: "/images/707.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -273,7 +273,7 @@ export const hospitalityCollection = [
   },
   {
     id: 8,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/708.jpg",
+    image: "/images/708.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -292,7 +292,7 @@ export const hospitalityCollection = [
   },
   {
     id: 9,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/709.jpg",
+    image: "/images/709.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -311,7 +311,7 @@ export const hospitalityCollection = [
   },
   {
     id: 10,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/710.jpg",
+    image: "/images/710.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -330,7 +330,7 @@ export const hospitalityCollection = [
   },
   {
     id: 11,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/711.jpg",
+    image: "/images/711.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -349,7 +349,7 @@ export const hospitalityCollection = [
   },
   {
     id: 12,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/712.jpg",
+    image: "/images/712.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -368,7 +368,7 @@ export const hospitalityCollection = [
   },
   {
     id: 13,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/713.jpg",
+    image: "/images/713.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -387,7 +387,7 @@ export const hospitalityCollection = [
   },
   {
     id: 14,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/727.jpg",
+    image: "/images/727.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -406,7 +406,7 @@ export const hospitalityCollection = [
   },
   {
     id: 15,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/729.jpg",
+    image: "/images/729.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -426,7 +426,7 @@ export const hospitalityCollection = [
   {
     id: 16,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/735-1024x1024.jpg",
+      "/images/735-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -446,7 +446,7 @@ export const hospitalityCollection = [
   {
     id: 17,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/736-1024x1024.jpg",
+      "/images/736-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -466,7 +466,7 @@ export const hospitalityCollection = [
   {
     id: 18,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/737-1024x1024.jpg",
+      "/images/737-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -486,7 +486,7 @@ export const hospitalityCollection = [
   {
     id: 19,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/738-1024x1024.jpg",
+      "/images/738-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -506,7 +506,7 @@ export const hospitalityCollection = [
   {
     id: 20,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/739-1024x1024.jpg",
+      "/images/739-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -526,7 +526,7 @@ export const hospitalityCollection = [
   {
     id: 21,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/740-1024x1024.jpg",
+      "/images/740-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -546,7 +546,7 @@ export const hospitalityCollection = [
   {
     id: 22,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/742-1024x1024.jpg",
+      "/images/742-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -566,7 +566,7 @@ export const hospitalityCollection = [
   {
     id: 23,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/743-1024x1024.jpg",
+      "/images/743-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -586,7 +586,7 @@ export const hospitalityCollection = [
   {
     id: 24,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/745-1024x1024.jpg",
+      "/images/745-1024x1024.jpg",
     name: "Hospitality Collection",
     availability: "on order",
     rating: 5,
@@ -608,7 +608,7 @@ export const hospitalityCollection = [
 export const luxuryCollection = [
   {
     id: "CL-05-001",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/715-1.jpg",
+    image: "/images/715-1.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -625,7 +625,7 @@ export const luxuryCollection = [
   },
   {
     id: "CL-05-002",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/716-1.jpg",
+    image: "/images/716-1.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -642,7 +642,7 @@ export const luxuryCollection = [
   },
   {
     id: "CL-05-003",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/717.jpg",
+    image: "/images/717.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -659,7 +659,7 @@ export const luxuryCollection = [
   },
   {
     id: "CL-05-004",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/718.jpg",
+    image: "/images/718.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -677,7 +677,7 @@ export const luxuryCollection = [
   {
     id: "CL-05-005",
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/719-300x300.jpg",
+      "/images/719-300x300.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -694,7 +694,7 @@ export const luxuryCollection = [
   },
   {
     id: "CL-05-006",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/720.jpg",
+    image: "/images/720.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -711,7 +711,7 @@ export const luxuryCollection = [
   },
   {
     id: "CL-05-007",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/721.jpg",
+    image: "/images/721.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -728,7 +728,7 @@ export const luxuryCollection = [
   },
   {
     id: "CL-05-08",
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/722.jpg",
+    image: "/images/722.jpg",
     name: "Luxor Collection",
     pileComposition: "100% Viscose",
     quality: "Handknotted 10/42 (95 KPSI)",
@@ -749,7 +749,7 @@ export const productsCategoryCollection = [
   // Hand Knotted Category
   {
     id: 1,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK06-2.jpg",
+    image: "/images/HK06.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -770,7 +770,7 @@ export const productsCategoryCollection = [
   {
     id: 2,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK09-2-765x1024.jpg",
+      "/images/HK09-2-765x1024.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -790,7 +790,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 3,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK04.jpg",
+    image: "/images/HK04.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -811,7 +811,7 @@ export const productsCategoryCollection = [
 
   {
     id: 16,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK07.jpg",
+    image: "/images/HK07.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -832,7 +832,7 @@ export const productsCategoryCollection = [
 
   {
     id: 17,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK01.jpg",
+    image: "/images/HK01.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -853,7 +853,7 @@ export const productsCategoryCollection = [
 
   {
     id: 18,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK02.jpg",
+    image: "/images/HK02.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -874,7 +874,7 @@ export const productsCategoryCollection = [
 
   {
     id: 19,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK03.jpg",
+    image: "/images/HK03.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -895,7 +895,7 @@ export const productsCategoryCollection = [
 
   {
     id: 20,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK08-1.jpg",
+    image: "/images/HK08-1.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -915,7 +915,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 21,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK10-1.jpg",
+    image: "/images/HK10-1.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -936,7 +936,7 @@ export const productsCategoryCollection = [
   {
     id: 22,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/TPC_6354.jpg",
+      "/images/TPC_6354.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -956,7 +956,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 23,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/007.jpg",
+    image: "/images/007 (1).jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -976,7 +976,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 24,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/07.jpg",
+    image: "/images/07.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -996,7 +996,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 25,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/11.jpg",
+    image: "/images/11.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1016,7 +1016,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 26,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/12.jpg",
+    image: "/images/12.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1036,7 +1036,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 27,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/13.jpg",
+    image: "/images/13.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1057,7 +1057,7 @@ export const productsCategoryCollection = [
   {
     id: 28,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/14-719x1024.jpg",
+      "/images/14.JPG",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1075,49 +1075,10 @@ export const productsCategoryCollection = [
     origin: "India",
     reviews: [],
   },
-  {
-    id: 29,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/19.jpg",
-    name: "Hand Knotted Rugs",
-    category: "Hand Knotted",
-    availability: "on order",
-    rating: 4.9,
-    productCode: "RSM97027",
-    pattern: "Classic",
-    style: "Modern",
-    material: "Wool",
-    productionType: "Hand Weaving",
-    pileHeight: "Medium pile (10 mm)",
-    shape: "Rectangular",
-    size: "on request",
-    productId: "KPHO-BNPL-038",
-    customization: "on request",
-    origin: "India",
-    reviews: [],
-  },
-  {
-    id: 30,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/20.jpg",
-    name: "Hand Knotted Rugs",
-    category: "Hand Knotted",
-    availability: "on order",
-    rating: 4.9,
-    productCode: "RSM97028",
-    pattern: "Classic",
-    style: "Modern",
-    material: "Wool",
-    productionType: "Hand Weaving",
-    pileHeight: "Medium pile (10 mm)",
-    shape: "Rectangular",
-    size: "on request",
-    productId: "KPHO-BNPL-039",
-    customization: "on request",
-    origin: "India",
-    reviews: [],
-  },
+
   {
     id: 31,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/24.jpg",
+    image: "/images/24.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1137,7 +1098,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 32,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/08.jpg",
+    image: "/images/08.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1157,7 +1118,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 33,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/016.jpg",
+    image: "/images/016.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1177,7 +1138,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 34,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/101.jpg",
+    image: "/images/101.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1197,7 +1158,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 35,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/110.jpg",
+    image: "/images/110.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1217,7 +1178,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 36,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/108.jpg",
+    image: "/images/108.jpg",
     name: "Hand Knotted Rugs",
     category: "Hand Knotted",
     availability: "on order",
@@ -1239,7 +1200,7 @@ export const productsCategoryCollection = [
   // / Hand Loom Category
   {
     id: 4,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL10.jpg",
+    image: "/images/HL10.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1259,7 +1220,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 5,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL07.jpg",
+    image: "/images/HL07.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1279,7 +1240,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 6,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL08.jpg",
+    image: "/images/HL08.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1299,7 +1260,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 37,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL09.jpg",
+    image: "/images/HL09.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1319,7 +1280,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 38,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL1.jpg",
+    image: "/images/HL1.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1339,7 +1300,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 39,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL03.jpg",
+    image: "/images/HL03.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1359,7 +1320,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 40,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL04.jpg",
+    image: "/images/HL04.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1379,7 +1340,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 41,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL05.jpg",
+    image: "/images/HL05.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1399,7 +1360,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 42,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL2.jpg",
+    image: "/images/HL2.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1419,7 +1380,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 43,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL06.jpg",
+    image: "/images/HL06.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1439,7 +1400,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 44,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL11.jpg",
+    image: "/images/HL11.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1459,7 +1420,7 @@ export const productsCategoryCollection = [
   },
   {
     id: 45,
-    image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL05.jpg",
+    image: "/images/HL05.jpg",
     name: "Modern Hand Loom Rug",
     category: "Hand Loom",
     availability: "on order",
@@ -1482,7 +1443,7 @@ export const productsCategoryCollection = [
   {
     id: 7,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/01-1-1-765x1024.jpg",
+      "/images/01-1-1-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1503,7 +1464,7 @@ export const productsCategoryCollection = [
   {
     id: 8,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht2-1-765x1024.jpeg",
+      "/images/ht2-1-765x1024.jpeg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1524,7 +1485,7 @@ export const productsCategoryCollection = [
   {
     id: 9,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht3-765x1024.jpg",
+      "/images/ht3-1-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1545,7 +1506,7 @@ export const productsCategoryCollection = [
   {
     id: 46,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht4-765x1024.jpg",
+      "/images/ht4-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1566,7 +1527,7 @@ export const productsCategoryCollection = [
   {
     id: 47,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht5-765x1024.jpg",
+      "/images/ht5-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1587,7 +1548,7 @@ export const productsCategoryCollection = [
   {
     id: 48,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht6-765x1024.jpg",
+      "/images/ht6-765x1024.jpg", 
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1608,7 +1569,7 @@ export const productsCategoryCollection = [
   {
     id: 49,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht7-765x1024.jpg",
+      "/images/ht7-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1629,7 +1590,7 @@ export const productsCategoryCollection = [
   {
     id: 50,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht8-765x1024.jpg",
+      "/images/ht8-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1650,7 +1611,7 @@ export const productsCategoryCollection = [
   {
     id: 51,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht9-765x1024.jpg",
+      "/images/ht9-1-765x1024.jpg",
     name: "Soft Hand Tufted Rug",
     category: "Hand Tufted",
     availability: "on order",
@@ -1673,7 +1634,7 @@ export const productsCategoryCollection = [
   {
     id: 10,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/001-765x1024.jpg",
+      "/images/001-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1694,7 +1655,7 @@ export const productsCategoryCollection = [
   {
     id: 11,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/003-765x1024.jpg",
+      "/images/003-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1715,7 +1676,7 @@ export const productsCategoryCollection = [
   {
     id: 12,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/012-765x1024.jpg",
+      "/images/012-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1736,7 +1697,7 @@ export const productsCategoryCollection = [
   {
     id: 52,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/009-765x1024.jpg",
+      "/images/009-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1757,7 +1718,7 @@ export const productsCategoryCollection = [
   {
     id: 53,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/FLT1153-765x1024.jpg",
+      "/images/FLT1153.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1778,7 +1739,7 @@ export const productsCategoryCollection = [
   {
     id: 54,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/010-765x1024.jpg",
+      "/images/010-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1799,7 +1760,7 @@ export const productsCategoryCollection = [
   {
     id: 55,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/011-765x1024.jpg",
+      "/images/011-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1820,7 +1781,7 @@ export const productsCategoryCollection = [
   {
     id: 56,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/004-1-765x1024.jpg",
+      "/images/004-1-765x1024.jpg",
     name: "Classic Flat Weave Kilim",
     category: "Flat Weave",
     availability: "on order",
@@ -1843,7 +1804,7 @@ export const productsCategoryCollection = [
   {
     id: 13,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/02-2-1024x1024.jpeg",
+      "/images/02-2-1024x1024.jpeg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1864,7 +1825,7 @@ export const productsCategoryCollection = [
   {
     id: 14,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/03-1024x1024.jpeg",
+      "/images/03-1024x1024.jpeg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1885,7 +1846,7 @@ export const productsCategoryCollection = [
   {
     id: 15,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/04-1024x1024.jpeg",
+      "/images/04-1024x1024.jpeg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1906,7 +1867,7 @@ export const productsCategoryCollection = [
   {
     id: 56,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/05-1024x1024.jpeg",
+      "/images/05-1024x1024.jpeg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1927,7 +1888,7 @@ export const productsCategoryCollection = [
   {
     id: 57,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/15-765x1024.jpg",
+      "/images/15-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1948,7 +1909,7 @@ export const productsCategoryCollection = [
   {
     id: 58,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/16-765x1024.jpg",
+      "/images/16-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1969,7 +1930,7 @@ export const productsCategoryCollection = [
   {
     id: 59,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/17-765x1024.jpg",
+      "/images/17-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -1990,7 +1951,7 @@ export const productsCategoryCollection = [
   {
     id: 60,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/18-765x1024.jpg",
+      "/images/18-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -2011,7 +1972,7 @@ export const productsCategoryCollection = [
   {
     id: 61,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/19-1-765x1024.jpg",
+      "/images/19-1-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -2032,7 +1993,7 @@ export const productsCategoryCollection = [
   {
     id: 62,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/20-1-765x1024.jpg",
+      "/images/20-1-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -2053,7 +2014,7 @@ export const productsCategoryCollection = [
   {
     id: 63,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/22-765x1024.jpg",
+      "/images/22-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -2074,7 +2035,7 @@ export const productsCategoryCollection = [
   {
     id: 64,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/23-765x1024.jpg",
+      "/images/23-765x1024.jpg",
     name: "Natural Jute Area Rug",
     category: "Jute",
     availability: "on order",
@@ -2106,37 +2067,37 @@ export const collectionsInstagramWall = [
   {
     id: 1,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc03-scaled.jpg",
+      "/images/tpc03-scaled.jpg",
     link: "https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==",
   },
   {
     id: 2,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc02-scaled.jpg",
+      "/images/tpc02-scaled.jpg",
     link: "https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==",
   },
   {
     id: 3,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc06-1-scaled.jpg",
+      "/images/tpc06-1-scaled.jpg",
     link: "https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==",
   },
   {
     id: 4,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc04-scaled.jpg",
+      "/images/tpc04-scaled.jpg",
     link: "https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==",
   },
   {
     id: 5,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/Untitled-1-copy.jpg",
+      "/images/Untitled-1-copy.jpg",
     link: "https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==",
   },
   {
     id: 6,
     image:
-      "https://thephenixcarpets.com/wp-content/uploads/2023/05/tpc05-scaled.jpg",
+      "/images/tpc05-scaled.jpg",
     link: "https://instagram.com/the_phenix_carpet_?igshid=ZGUzMzM3NWJiOQ==",
   },
 ];

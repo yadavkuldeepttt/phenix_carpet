@@ -4,7 +4,6 @@ import { ChevronRight, ZoomIn } from "lucide-react";
 import { hospitalityCollection } from "../../../utils/data";
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
-import QuoteRequestForm from "../quoteRequestForm";
 import Reviews from "../reviews";
 
 const ProductDetails = () => {
@@ -14,7 +13,6 @@ const ProductDetails = () => {
   const [showModal, setShowModal] = useState(false);
   const [zoomStyle, setZoomStyle] = useState({});
   const [showZoomIcon, setShowZoomIcon] = useState(false);
-  const [showQuoteForm, setShowQuoteForm] = useState(false);
 
   const { productId } = useParams();
 
@@ -60,6 +58,11 @@ const ProductDetails = () => {
       setShowZoomIcon(false);
     });
   };
+
+  const handleRequestQuotes = () => {
+    window.location.href = "mailto:info@thephenixcarpets.com";
+  };
+
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -149,7 +152,7 @@ const ProductDetails = () => {
                 </ul>
 
                 <button
-                  onClick={() => setShowQuoteForm(true)}
+                  onClick={handleRequestQuotes}
                   className="mt-8 bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors"
                 >
                   Request Quotes
@@ -224,12 +227,7 @@ const ProductDetails = () => {
         <ImageModal setShowModal={setShowModal} product={product} />
       )}
 
-    <QuoteRequestForm 
-    isOpen={showQuoteForm}
-    onClose={() => setShowQuoteForm(false)}
-    productDetails={product}
-    setShowQuoteForm={setShowQuoteForm}
-    />
+
     </div>
   );
 };

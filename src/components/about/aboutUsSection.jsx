@@ -1,7 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
-import { teamMembers } from "../../utils/data.js";
 
 const AboutUsSection = () => {
   return (
@@ -35,7 +34,7 @@ const AboutUsSection = () => {
 
             <div className="grid grid-cols-2 gap-4 py-6">
               {[
-                "Hand Knotted",
+                "Hand Knots",
                 "Natural Dyes",
                 "Expert Weavers",
                 "Premium Materials",

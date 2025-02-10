@@ -13,7 +13,6 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { useNavigate } from "react-router";
 
 const Footer = () => {
-
   const navigate = useNavigate();
 
   const menu = [
@@ -21,9 +20,8 @@ const Footer = () => {
     "HAND LOOM",
     "HAND TUFTED",
     "FLAT WEAVE",
-    "JUTE"
+    "JUTE",
   ];
-
 
   return (
     <footer className="bg-slate-900 text-white">
@@ -71,10 +69,18 @@ const Footer = () => {
               >
                 <Linkedin size={20} />
               </a>
-              <a href="http://t.me/the_phenix_carpet" className="hover:text-blue-500 transition-colors">
+              <a
+                href="http://t.me/the_phenix_carpet"
+                target="_blank"
+                className="hover:text-blue-500 transition-colors"
+              >
                 <FaTelegramPlane size={20} />
               </a>
-              <a href="https://maps.app.goo.gl/KZByNVJAVXbnmgb97" className="hover:text-blue-500 transition-colors">
+              <a
+                href="https://maps.app.goo.gl/KZByNVJAVXbnmgb97"
+                target="_blank"
+                className="hover:text-blue-500 transition-colors"
+              >
                 <MapPin size={20} />
               </a>
             </div>
@@ -85,13 +91,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm tracking-[0.04rem]">
               {menu.map((item) => (
-                <li key={item}   onClick={() =>
-                  navigate(
-                    `/products/${item
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}`
-                  )
-                }>
+                <li
+                  key={item}
+                  onClick={() =>
+                    navigate(
+                      `/products/${item.toLowerCase().replace(/\s+/g, "-")}`
+                    )
+                  }
+                >
                   <a
                     href=""
                     className="text-slate-300 capitalize hover:text-white transition-colors hover:translate-x-1 inline-block transform"
@@ -166,9 +173,19 @@ const Footer = () => {
             </p>
             <p className="text-xs text-slate-500 leading-relaxed max-w-4xl mx-auto">
               The Phenix Carpet, India's Largest Manufacturer of Rugs/Carpets,
-              Wool Silk Rugs in India, Area Rugs India Supplier, Largest Rugs
-              Manufacturer India, Rugs exporters in india, Rug exporters in
-              india.
+              Woolen Carpet Manufacturers, Hand Knotted Rugs Carpet Manufacturer
+              and Exporter in India, Indoor Carpet Manufacturers, Carpet
+              Manufacturers in India, Outdoor Carpet Manufacturers, Carpet
+              Manufacturer India, India's Largest Manufacturer of Hand Knotted
+              Rugs, Silk Carpet Manufacturers and Exporter, Best Rugs Exporter
+              India, Largest Rugs Manufacturer India, Flat weave Manufacturers
+              and Exporter, Handmade Rugs from India, Handmade Rugs Exporter
+              India, Largest Carpets Manufacturer India, Hand Knotted Rugs
+              Manufacturer in India, Hand Knotted Carpet Manufacturer in India,
+              Designer Carpet Manufacturers in India, Bhadohi Rugs Exporters,
+              Bhadohi Carpets Exporters, Wool Silk Rugs Area Rugs India
+              Supplier, Largest Rugs Manufacturer, Rugs exporters in India, Rug
+              exporters in India.
             </p>
           </div>
         </div>

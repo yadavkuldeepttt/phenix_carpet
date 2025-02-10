@@ -29,32 +29,32 @@ const AboutPage = () => {
     {
       name: "GERMANY",
       code: "DE",
-      img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/Flag_of_Germany.svg.png",
+      img: "/images/Flag_of_Germany.svg.png",
     },
     {
       name: "U.A.E",
       code: "AE",
-      img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/Flag_of_the_United_Arab_Emirates.svg-1.png",
+      img: "/images/Flag_of_the_United_Arab_Emirates.svg-1.png",
     },
     {
       name: "U.S.A",
       code: "US",
-      img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/2560px-Flag_of_the_United_States.svg.png",
+      img: "/images/2560px-Flag_of_the_United_States.svg.png",
     },
     {
       name: "U.K",
       code: "GB",
-      img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/Flag_of_the_United_Kingdom-300x240.png",
+      img: "/images/Flag_of_the_United_Kingdom-300x240.png",
     },
     {
       name: "AUSTRALIA",
       code: "AU",
-      img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/1280px-Flag_of_Australia.svg.png",
+      img: "/images/1280px-Flag_of_Australia.svg.png",
     },
     {
       name: "JAPAN",
       code: "JP",
-      img: "https://thephenixcarpets.com/wp-content/uploads/2023/05/Flag_of_Japan_with_border-300x240.png",
+      img: "/images/Flag_of_Japan_with_border-300x240.png",
     },
     {
       name: "ITALY",
@@ -72,7 +72,7 @@ const AboutPage = () => {
       <PageBanner
         title="About Us"
         subtitle="Crafting Excellence Since 1996"
-        backgroundImage="url('https://thephenixcarpets.com/wp-content/uploads/2023/04/001.jpg')"
+        backgroundImage="url('/images/001_1.jpg')"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
       />
 
@@ -175,7 +175,7 @@ const AboutPage = () => {
             <p className="text-gray-700 mb-4">
               THE PHENIX CARPET is running by Mr. Pawan Maurya with Mrs. Babita
               Maurya. We are second generation of manufacturer and exporter of
-              Hand knotted, Handloom & Hand tufted and Woolen Carpets in India.
+              Hand knots, Handloom & Hand tufted and Woolen Carpets in India.
               We specialized in natural dyes carpets. We get our carpets weaved
               by expert weavers. We always use qualitative raw materials
               including good wool, viscose, silk etc.

@@ -7,14 +7,14 @@ const ContactPage = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: ["+91 123 456 7890", "+91 098 765 4321"],
+      details: ["+91 9454049020"],
       description: "Available Mon-Sat, 9:00 AM to 6:00 PM",
       gradient: "from-blue-400 to-purple-500",
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      details: ["info@phenixcarpets.com", "support@phenixcarpets.com"],
+      details: ["info@thephenixcarpets.com", "trade@thephenixcarpets.com"],
       description: "We'll respond within 24 hours",
       gradient: "from-purple-400 to-pink-500",
     },
@@ -22,8 +22,7 @@ const ContactPage = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Us",
       details: [
-        "123 Carpet Lane, Craft District",
-        "Bhadohi, Uttar Pradesh 221401",
+        "Gaderiyapur, Mondh, Bhadohi, Uttar Pradesh, India 221406"
       ],
       description: "Experience our craftsmanship in person",
       gradient: "from-pink-400 to-red-500",
@@ -40,6 +39,9 @@ const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
+
+    window.location.href = "mailto:info@thephenixcarpets.com";
+
   };
 
   return (
@@ -47,7 +49,7 @@ const ContactPage = () => {
       <PageBanner
         title="Contact Us"
         subtitle="Get in Touch with Our Experts"
-        backgroundImage="url('https://thephenixcarpets.com/wp-content/uploads/2023/05/0005.jpg')"
+        backgroundImage="url('/images/0005.jpg')"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
       />
 
@@ -142,7 +144,7 @@ const ContactPage = () => {
             <div className="group rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl">
               <div className="relative">
                 <img
-                  src="https://thephenixcarpets.com/wp-content/uploads/2023/04/007.jpg"
+                  src="/images/007_1.jpg"
                   loading="lazy"
                   alt="Phenix Carpets Showroom"
                   className="w-full h-screen object-cover transform transition-transform duration-700 group-hover:scale-105"

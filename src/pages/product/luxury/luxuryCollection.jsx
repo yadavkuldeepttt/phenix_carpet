@@ -44,7 +44,7 @@ const LuxuryCollection = () => {
       <PageBanner
         title="Luxury Collection"
         subtitle="Luxury Carpets for Premium Spaces"
-        backgroundImage="url('https://thephenixcarpets.com/wp-content/uploads/2023/04/001.jpg')"
+        backgroundImage="url('/images/001_1.jpg')"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Luxury Collection" },

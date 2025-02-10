@@ -7,7 +7,6 @@ import {
 } from "../../../utils/data";
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
-import QuoteRequestForm from "../quoteRequestForm";
 import Reviews from "../reviews";
 
 // Helper function to format the category
@@ -25,7 +24,6 @@ const ProductDetailsCategory = () => {
   const [showModal, setShowModal] = useState(false);
   const [zoomStyle, setZoomStyle] = useState({});
   const [showZoomIcon, setShowZoomIcon] = useState(false);
-  const [showQuoteForm, setShowQuoteForm] = useState(false);
 
   const { category, productId } = useParams();
   const formattedCategory = formatCategory(category);
@@ -93,6 +91,11 @@ const ProductDetailsCategory = () => {
       "☆".repeat(emptyStars)
     );
   };
+
+  const handleRequestQuotes = () => {
+    window.location.href = "mailto:info@thephenixcarpets.com";
+  };
+
   
 
   return (
@@ -186,7 +189,7 @@ const ProductDetailsCategory = () => {
                 </ul>
 
                 <button
-                  onClick={() => setShowQuoteForm(true)}
+                  onClick={handleRequestQuotes}
                   className="mt-8 bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors"
                 >
                   Request Quotes
@@ -251,12 +254,7 @@ const ProductDetailsCategory = () => {
         <ImageModal setShowModal={setShowModal} product={product} />
       )}
 
-      <QuoteRequestForm
-        isOpen={showQuoteForm}
-        onClose={() => setShowQuoteForm(false)}
-        productDetails={product}
-        setShowQuoteForm={setShowQuoteForm}
-      />
+  
     </div>
   );
 };

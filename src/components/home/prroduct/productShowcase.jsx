@@ -8,60 +8,60 @@ const ProductShowcase = () => {
   const carouselItems = [
     {
       id: 1,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht3.jpg",
+      image: "/images/ht3.jpg",
       alt: "Designer Rug 1",
     },
     {
       id: 2,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/ht6.jpg",
+      image: "/images/ht6.jpg",
       alt: "Designer Rug 2",
     },
     {
       id: 3,
       image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/20-1-768x1029-1.jpg",
+        "/images/20-1-768x1029-1.jpg",
       alt: "Designer Rug 3",
     },
     {
       id: 4,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/16.jpg",
+      image: "/images/16.jpg",
       alt: "Designer Rug 4",
     },
     {
       id: 5,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/022.jpg",
+      image: "/images/022.jpg",
       alt: "Designer Rug 5",
     },
     {
       id: 6,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HK01.jpg",
+      image: "/images/HK01.jpg",
       alt: "Designer Rug 6",
     },
     {
       id: 7,
       image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/27-768x1029.jpg",
+        "/images/27-768x1029.jpg",
       alt: "Designer Rug 7",
     },
     {
       id: 9,
       image:
-        "https://thephenixcarpets.com/wp-content/uploads/2023/05/004-1-768x1028.jpg",
+        "/images/004-1-768x1028.jpg",
       alt: "Designer Rug 8",
     },
     {
       id: 10,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/08.jpg",
+      image: "/images/08.jpg",
       alt: "Designer Rug 8",
     },
     {
       id: 11,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/HL04.jpg",
+      image: "/images/HL04.jpg",
       alt: "Designer Rug 8",
     },
     {
       id: 12,
-      image: "https://thephenixcarpets.com/wp-content/uploads/2023/05/108.jpg",
+      image: "/images/108.jpg",
       alt: "Designer Rug 8",
     },
   ];
@@ -101,9 +101,8 @@ const ProductShowcase = () => {
           {/* Left Section - Main Image (4 columns) */}
           <div className="md:col-span-4 relative overflow-hidden">
             <img
-              src="https://thephenixcarpets.com/wp-content/uploads/2023/05/ht9-765x1024.jpg"
+              src="/images/ht9-765x1024.jpg"
               alt="Main Product"
-              loading="lazy"
               className="w-full h-auto object-cover rounded-lg"
             />
           </div>

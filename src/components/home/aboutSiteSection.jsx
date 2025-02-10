@@ -33,7 +33,7 @@ const AboutSiteSection = () => {
             <div className="relative group">
               <div className="relative rounded-lg overflow-hidden transform transition-transform duration-500 group-hover:scale-105">
                 <img 
-                  src="https://thephenixcarpets.com/wp-content/uploads/2023/04/001.jpg" 
+                  src="/images/001_1.jpg" 
                   alt="Handmade Carpet Craftsmanship" 
                   className="w-full h-full object-cover"
                 />
