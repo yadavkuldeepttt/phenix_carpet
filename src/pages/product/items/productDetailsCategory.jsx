@@ -8,6 +8,7 @@ import {
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
 import Reviews from "../reviews";
+import QuoteRequestForm from "../quoteRequestForm";
 
 // Helper function to format the category
 const formatCategory = (category) => {
