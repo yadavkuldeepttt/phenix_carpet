@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 const AboutSiteSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative py-16 md:py-24 overflow-hidden bg-neutral-50">
       {/* Background Pattern */}
@@ -72,7 +74,8 @@ const AboutSiteSection = () => {
 
                 {/* CTA Button */}
                 <div className="mt-8">
-                  <button className="group relative inline-flex items-center px-8 py-3 text-base font-medium text-white bg-gray-900 rounded-full overflow-hidden transition-all duration-300 transform hover:scale-105">
+                  <button onClick={()=>navigate("/latest-project")} className="group relative inline-flex items-center px-8 py-3 text-base font-medium text-white bg-gray-900 rounded-full overflow-hidden transition-all duration-300 transform hover:scale-105">
+
                     <span className="relative z-10">Discover Our Collection</span>
                     <div className="absolute inset-0 bg-gray-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                   </button>

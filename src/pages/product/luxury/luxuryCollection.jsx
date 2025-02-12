@@ -149,7 +149,7 @@ const LuxuryCollection = () => {
             solutions for your hospitality space. Get in touch for custom
             designs, bulk orders, and professional consultation.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+          <button onClick={()=>navigate("/contact")} className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">
             Contact Our Team
           </button>
         </div>

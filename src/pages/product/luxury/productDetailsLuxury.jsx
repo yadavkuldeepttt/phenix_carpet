@@ -4,6 +4,7 @@ import { ChevronRight, ZoomIn } from "lucide-react";
 import { luxuryCollection } from "../../../utils/data";
 import ImageModal from "../imageModal";
 import RelatedProducts from "../relatedProducts";
+import QuoteRequestForm from "../quoteRequestForm";
 
 const ProductDetailsLuxury = () => {
   const navigate = useNavigate();
@@ -12,6 +13,8 @@ const ProductDetailsLuxury = () => {
   const [showModal, setShowModal] = useState(false);
   const [zoomStyle, setZoomStyle] = useState({});
   const [showZoomIcon, setShowZoomIcon] = useState(false);
+  const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const { productId } = useParams();
 
@@ -58,9 +61,6 @@ const ProductDetailsLuxury = () => {
     });
   };
 
-  const handleRequestQuotes = () => {
-    window.location.href = "mailto:info@thephenixcarpets.com";
-  };
 
 
   return (
@@ -148,7 +148,11 @@ const ProductDetailsLuxury = () => {
                 </ul>
 
                 <button
-                  onClick={handleRequestQuotes}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedProduct(product);
+                    setShowQuoteForm(true);
+                  }}
                   className="mt-8 bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors"
                 >
                   Request Quotes
@@ -221,6 +225,15 @@ const ProductDetailsLuxury = () => {
       {/* Image Modal */}
       {showModal && (
         <ImageModal setShowModal={setShowModal} product={product} />
+      )}
+
+      {showQuoteForm && selectedProduct && (
+        <QuoteRequestForm
+          isOpen={showQuoteForm}
+          onClose={() => setShowQuoteForm(false)}
+          productDetails={selectedProduct}
+          setShowQuoteForm={setShowQuoteForm}
+        />
       )}
     </div>
   );

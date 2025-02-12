@@ -13,6 +13,7 @@ import LuxuryCollection from "./pages/product/luxury/luxuryCollection.jsx";
 import ProductDetailsLuxury from "./pages/product/luxury/productDetailsLuxury.jsx";
 import ProductDetailsCategory from "./pages/product/items/productDetailsCategory.jsx";
 import ProductsPage from "./pages/product/items/productsPage.jsx";
+import LatestProject from "./pages/latestProject.jsx";
 
 class App extends Component {
   render() {
@@ -42,6 +43,8 @@ class App extends Component {
             <Route path="/products/:category" element={<ProductsPage />} />
 
             <Route path="/product/:category/:productId" element={<ProductDetailsCategory />} />
+
+            <Route path="/latest-project" element={<LatestProject />} />
 
           </Routes>
         </div>

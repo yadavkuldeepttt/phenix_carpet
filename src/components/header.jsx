@@ -115,7 +115,11 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
+
+            <button onClick={()=>navigate("/")}>
+
             <img src="/images/LOGO3210.png" alt="" className="h-16 w-20" />
+            </button>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
