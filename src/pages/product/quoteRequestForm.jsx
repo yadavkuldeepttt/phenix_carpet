@@ -95,7 +95,7 @@ This is a quote request from The Phenix Carpets website.
       <div className="relative h-[80vh] overflow-auto scroll max-w-[90vw] w-auto bg-white rounded-lg shadow-2xl">
         <div className="bg-white rounded-lg w-full max-w-3xl relative">
           <div className="p-6 border-b">
-            <h2 className="text-xl text-start font-semibold text-gray-900">
+            <h2 className="text-xl max-w-xl text-start font-semibold text-gray-900">
               Request Quote for {productDetails.name} <br/> {productDetails.styleNumber? productDetails.styleNumber : productDetails.productId}
             </h2>
             <button

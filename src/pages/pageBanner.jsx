@@ -20,7 +20,7 @@ const PageBanner = ({
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         {/* Title Section */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl tracking-[0.06rem] font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-5xl tracking-[0.06rem] font-bold text-white mb-4">
             {title}
           </h1>
           <div className="flex flex-col items-center gap-3">
