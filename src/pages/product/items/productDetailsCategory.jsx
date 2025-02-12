@@ -24,6 +24,8 @@ const ProductDetailsCategory = () => {
   const [showModal, setShowModal] = useState(false);
   const [zoomStyle, setZoomStyle] = useState({});
   const [showZoomIcon, setShowZoomIcon] = useState(false);
+  const [showQuoteForm, setShowQuoteForm] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const { category, productId } = useParams();
   const formattedCategory = formatCategory(category);
@@ -79,24 +81,15 @@ const ProductDetailsCategory = () => {
     });
   };
 
-
   const renderStars = (rating) => {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 === 0.5;
     const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-    
+
     return (
-      "★".repeat(fullStars) + 
-      (hasHalfStar ? "☆" : "") + 
-      "☆".repeat(emptyStars)
+      "★".repeat(fullStars) + (hasHalfStar ? "☆" : "") + "☆".repeat(emptyStars)
     );
   };
-
-  const handleRequestQuotes = () => {
-    window.location.href = "mailto:info@thephenixcarpets.com";
-  };
-
-  
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -166,7 +159,7 @@ const ProductDetailsCategory = () => {
                 <ul className="grid grid-cols-1 gap-4 max-sm:ps-5 list-disc  ">
                   {Object.entries({
                     Availability: product.availability,
-                    Rating:renderStars(product.rating),
+                    Rating: renderStars(product.rating),
                     "Product Code": product.productCode,
                     Pattern: product.pattern,
                     Style: product.style,
@@ -189,7 +182,11 @@ const ProductDetailsCategory = () => {
                 </ul>
 
                 <button
-                  onClick={handleRequestQuotes}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedProduct(product);
+                    setShowQuoteForm(true);
+                  }}
                   className="mt-8 bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors"
                 >
                   Request Quotes
@@ -254,7 +251,14 @@ const ProductDetailsCategory = () => {
         <ImageModal setShowModal={setShowModal} product={product} />
       )}
 
-  
+      {showQuoteForm && selectedProduct && (
+        <QuoteRequestForm
+          isOpen={showQuoteForm}
+          onClose={() => setShowQuoteForm(false)}
+          productDetails={selectedProduct}
+          setShowQuoteForm={setShowQuoteForm}
+        />
+      )}
     </div>
   );
 };

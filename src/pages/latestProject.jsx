@@ -7,12 +7,12 @@ const LatestProject = () => {
       <div className="relative h-[40vh] bg-gray-900">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center tracking-[0.08rem]">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center tracking-[0.08rem]">
             Our Latest Projects
           </h1>
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-white opacity-60"></div>
-            <div className="text-lg tracking-[0.06rem]">Artistry in Motion</div>
+            <div className="text-sm md:text-lg  tracking-[0.06rem]">Artistry in Motion</div>
             <div className="h-px w-12 bg-white opacity-60"></div>
           </div>
         </div>
@@ -22,7 +22,7 @@ const LatestProject = () => {
       <div className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-[0.06rem]">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 tracking-[0.06rem]">
               Coming Soon
             </h2>
             <div className="flex justify-center items-center gap-2 mb-8">
@@ -30,7 +30,7 @@ const LatestProject = () => {
               <div className="w-2 h-2 rounded-full bg-gray-300"></div>
               <div className="h-px w-12 bg-gray-300"></div>
             </div>
-            <p className="text-xl text-gray-600 mb-8 tracking-[0.04rem] leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 tracking-[0.04rem] leading-relaxed">
               We're weaving something extraordinary for you.
             </p>
           </div>
@@ -63,7 +63,7 @@ const LatestProject = () => {
             <p className="text-gray-600 mb-6 tracking-[0.03rem]">
               Be the first to know when we launch our new collections. Subscribe to our newsletter for exclusive updates and previews.
             </p>
-            <div className="flex gap-4 max-w-md mx-auto">
+            <div className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
